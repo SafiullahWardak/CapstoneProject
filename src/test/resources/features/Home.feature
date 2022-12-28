@@ -34,7 +34,7 @@ Examples:
 Scenario: Verify User can add an item to cart 
 Given User is on retail website 
 When User click on Sign in option 
-And User enter email 'Hakimi@gmail.com' and password 'Hakimi1111111@' 
+And User enter email 'safiullah.wardak@tekschool.us' and password 'ABC123asd$' 
 And User click on login button 
 Then User should be logged in into Account 
 
@@ -50,7 +50,7 @@ Then the cart icon quantity should change to '2'
 Scenario: Verify User can place an order without Shipping address and payment Method on file
 Given User is on retail website 
 When User click on Sign in option 
-And User enter email 'Hakimi@gmail.com' and password 'Hakimi1111111@' 
+And User enter email 'safiullah.wardak@tekschool.us' and password 'ABC123asd$' 
 And User click on login button 
 Then User should be logged in into Account 
 
@@ -67,12 +67,12 @@ And User click on Proceed to Checkout button
 And User click Add a new address link for shipping address 
 And user fill new address form with below information 
 |country|fullName|phoneNumber|streetAddress|apt |city | state |zipCode|
-|United States | Feraidon Hakimi | 43423423424 | 1211 kabul| 1122 | silver | Maryland | 12121 |
+|United States | Safiullah Wardak | 2027950545 | 44342 Tillman ter | 600 | Ashburn | VA | 20147 |
 And User click Add Your Address button 
 And User click Add a credit card or Debit Card for Payment method
 And User fill Debit or credit card information 
 |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode|
-|1010121214532323 | zaib hakimi | 12   |2028 |123 |
+|00021212145454 | Safi Wardak | 12   |2027 |456 |
 And User click on Add your card button 
 And User click on Place Your Order
 Then a message should be displayed 'Order Placed, Thanks'
@@ -84,7 +84,7 @@ Then a message should be displayed 'Order Placed, Thanks'
 Scenario: Verify User can place an order with Shipping address and payment Method on file
 Given User is on retail website 
 When User click on Sign in option 
-And User enter email 'Hakimi@gmail.com' and password 'Hakimi1111111@' 
+And User enter email 'safiullah.wardak@tekschool.us' and password 'ABC123asd$' 
 And User click on login button 
 Then User should be logged in into Account
 

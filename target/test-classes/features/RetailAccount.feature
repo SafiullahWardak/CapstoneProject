@@ -6,7 +6,7 @@ Feature: Retail Account Page
   Background: 
     Given User is on retail website 
 		When User click on Sign in option 
-		And User enter email 'Hakimi@gmail.com' and password 'Hakimi1111111@' 
+		And User enter email 'safiullah.wardak@tekschool.us' and password 'ABC123asd$' 
 		And User click on login button 
 		Then User should be logged in into Account 
     
@@ -14,7 +14,7 @@ Feature: Retail Account Page
 	@personalInformation
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'feraidoon' and Phone '4343434343'
+    And User update Name 'Safiullah' and Phone '2027950545'
     And User click on Update button
     Then user profile information should be updated
 #@PasswordUpdated
@@ -22,7 +22,7 @@ Feature: Retail Account Page
 #    When User click on Account option
 #    And User enter below information
 #      | previousPassword | newPassword | confirmPassword |
-#      | Hakimi1111111@      | Hakimi11111111@  | Hakimi11111111@      |
+#      | ABC123asd$      | ABC123asd$  | ABC123asd$      |
 #    And User click on Change Password button
 #   Then a message should be displayed Password Updated Successfully
 	@AddCard
@@ -31,7 +31,7 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 0031561120123410 | Hakimuui      | 11         | 2028         | 513        |
+      | 00046112012454 | Safi wardak      | 12         | 2027         | 456        |
     And User click on Add your card button
     Then a message should be displayed Payment Method added successfully
  	@Edit
@@ -42,7 +42,7 @@ Feature: Retail Account Page
     And User click on Edit option of card section
     And user edit information with below data
       | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 0122333404000788      | zabih      | 12           | 2028          | 444        |
+      | 000433340400647      | Safi wardak     | 12           | 2027          | 456        |
     And user click on Update Your Card button
     Then a message should be displayed Payment Method updated Successfully
 	@removedCard
@@ -58,7 +58,7 @@ Feature: Retail Account Page
     And User click on Add address option
     And user fill new address form with below information
       | country | fullName | phoneNumber | streetAddress | apt   | city  | state | zipCode |
-      | United States   | zabih    | 12345678901       |      1131 uni w    | 1212 | silver | Maryland | 20021   |
+      | United States   | Safi wardak    | 2027950545       |      44342 tillman ter   | 600 | Ashburn | VA | 20147   |
     And User click Add Your Address button
     Then a message should be displayed Address Added Successfully
 
@@ -68,7 +68,7 @@ Feature: Retail Account Page
     And User click on edit address option
     And user fill new address form with below information there
       | country | fullName | phoneNumber | streetAddress | apt   | city  | state | zipCode |
-      |  United States  | Hami    | 23232323445       | 1121 university bld         | 1122 | rocvile | Maryland | 20202   |
+      |  United States  | safi wardak    | 2027950545      | 44342 tillman ter        | 600 | Ashburn | VA | 20147   |
     And User click update Your Address button
     Then a message should be displayed Address Updated Successfully
 
